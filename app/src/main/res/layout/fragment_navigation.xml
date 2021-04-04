@@ -1,66 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.MainActivity"
-    android:background="#800101">
-
+    android:layout_height="match_parent">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Notebook"
-        android:textSize="60dp"
         android:fontFamily="cursive"
-        android:textColor="#FFFFFF"
+        android:shadowColor="@android:color/black"
         android:shadowDx="3"
         android:shadowDy="3"
         android:shadowRadius="5"
-        android:shadowColor="@android:color/black"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="Notebook"
+        android:textColor="#FFFFFF"
+        android:textSize="60dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center"
-        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/creatingFragmentBtn"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:text="Lets create new"
-            android:textAllCaps="false"
-            android:textSize="15dp"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
-            android:textColor="@android:color/white"
             android:background="@drawable/list_button"
-            android:layout_marginTop="20dp" />
+            android:text="Create a new note"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+
         <Button
             android:id="@+id/notesListBtn"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:textColor="@android:color/white"
-            android:text="Notes list"
-            android:textSize="15dp"
-            android:textAllCaps="false"
+            android:layout_marginTop="8dp"
             android:background="@drawable/list_button"
-            android:layout_marginTop="8dp" />
+            android:text="Notes list"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
 
-
-
-
-
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/list_button"
+            android:layout_marginTop="8dp"
+            android:text="Записать аудио"
+            android:textColor="#FFF"/>
 
     </LinearLayout>
 
